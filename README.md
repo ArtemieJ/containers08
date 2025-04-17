@@ -1,4 +1,4 @@
-# Lucrare de laborator ¹8: Integrare continua cu Github Actions
+# Lucrare de laborator Å¡8: Integrare continua cu Github Actions
 
 ## Scopul lucrarii
 In cadrul acestei lucrari am invatat cum sa configuram integrarea continua (CI) cu ajutorul GitHub Actions pentru o aplicatie Web PHP rulata in containere Docker.
@@ -13,12 +13,12 @@ In cadrul acestei lucrari am invatat cum sa configuram integrarea continua (CI) 
 1. Am creat un proiect nou `containers08` si am adaugat structura aplicatiei in directorul `./site/`:
 site 
 +-- modules/ 
-¦ +-- database.php 
-¦ L-- page.php 
+Åš +-- database.php 
+Åš L-- page.php 
 +-- templates/ 
-¦ L-- index.tpl 
+Åš L-- index.tpl 
 +-- styles/ 
-¦ L-- style.css 
+Åš L-- style.css 
 +-- config.php 
 L-- index.php
 
@@ -62,6 +62,7 @@ on:
     branches:
       - main
 
+```
 4. Ce trebuie adaugat in fisierul .github/workflows/main.yml pentru a sterge imaginile create dupa testare?  
 Se adauga un pas nou la finalul workflow-ului:  
 name: Remove Docker image
