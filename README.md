@@ -11,7 +11,7 @@ In cadrul acestei lucrari am invatat cum sa configuram integrarea continua (CI) 
 ## Descrierea lucrarii
 
 1. Am creat un proiect nou `containers08` si am adaugat structura aplicatiei in directorul `./site/`:
-site 
+```
 site
 ├── modules/
 │ ├── database.php
@@ -22,7 +22,7 @@ site
 │ └── style.css
 ├── config.php
 └── index.php
-
+```
 3. Am creat o baza de date SQLite si scriptul `schema.sql` pentru a popula initial baza de date cu 3 pagini.
 
 4. Am scris teste unitare pentru toate metodele claselor `Database` si `Page` in fisierele din directorul `./tests`.
