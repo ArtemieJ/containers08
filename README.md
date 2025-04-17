@@ -1,4 +1,4 @@
-# Lucrare de laborator š8: Integrare continua cu Github Actions
+# Lucrare de laborator Nr8: Integrare continua cu Github Actions
 
 ## Scopul lucrarii
 In cadrul acestei lucrari am invatat cum sa configuram integrarea continua (CI) cu ajutorul GitHub Actions pentru o aplicatie Web PHP rulata in containere Docker.
