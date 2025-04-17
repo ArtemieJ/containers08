@@ -12,33 +12,34 @@ In cadrul acestei lucrari am invatat cum sa configuram integrarea continua (CI) 
 
 1. Am creat un proiect nou `containers08` si am adaugat structura aplicatiei in directorul `./site/`:
 site 
-+-- modules/ 
-Ś +-- database.php 
-Ś L-- page.php 
-+-- templates/ 
-Ś L-- index.tpl 
-+-- styles/ 
-Ś L-- style.css 
-+-- config.php 
-L-- index.php
+site
+├── modules/
+│ ├── database.php
+│ └── page.php
+├── templates/
+│ └── index.tpl
+├── styles/
+│ └── style.css
+├── config.php
+└── index.php
 
-2. Am creat o baza de date SQLite si scriptul `schema.sql` pentru a popula initial baza de date cu 3 pagini.
+3. Am creat o baza de date SQLite si scriptul `schema.sql` pentru a popula initial baza de date cu 3 pagini.
 
-3. Am scris teste unitare pentru toate metodele claselor `Database` si `Page` in fisierele din directorul `./tests`.
+4. Am scris teste unitare pentru toate metodele claselor `Database` si `Page` in fisierele din directorul `./tests`.
 
-4. Am configurat un fisier `Dockerfile` care:
+5. Am configurat un fisier `Dockerfile` care:
    - Instaleaza extensia `pdo_sqlite`
    - Construieste baza de date
    - Copiaza aplicatia in container
 
-5. Am configurat GitHub Actions in `.github/workflows/main.yml` pentru a:
+6. Am configurat GitHub Actions in `.github/workflows/main.yml` pentru a:
    - Rula build-ul Docker
    - Crea containerul
    - Copia testele
    - Rula testele
    - Sterge containerul
 
-6. Am facut commit si push pe GitHub, apoi am verificat in fila **Actions** ca toate testele ruleaza cu succes.
+7. Am facut commit si push pe GitHub, apoi am verificat in fila **Actions** ca toate testele ruleaza cu succes.
 
 ## Intrebari
 
