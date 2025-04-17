@@ -65,10 +65,11 @@ on:
 
 ```
 4. Ce trebuie adaugat in fisierul .github/workflows/main.yml pentru a sterge imaginile create dupa testare?  
-Se adauga un pas nou la finalul workflow-ului:  
+Se adauga un pas nou la finalul workflow-ului:
+```
 name: Remove Docker image
 run: docker rmi containers08
-
+```
 Concluzie  
 Am invatat cum sa creez o aplicatie web in PHP, sa scriu teste pentru aceasta si sa configurez integrarea continua folosind GitHub Actions. Procesul automatizat ajuta la identificarea rapida a problemelor si creste fiabilitatea aplicatiei.
 
